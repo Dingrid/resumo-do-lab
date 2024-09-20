@@ -63,4 +63,67 @@ Ex: Microsoft Teams, Office 365, e-mail, calendários, etc.
 
 - Iaas -> PaaS -> SaaS (maior gestão -> menor gestão)
 
+# REGIÕES
+- As regiões são compostas de um ou mais datacenters muito próximos (sempre trabalhamos com a ideia de 3 datacenters)
+- Nem todos os recursos estão disponíveis em todas as regiões
+- As regiões preservam a residência dos dados com uma oferta abrangente (LGPD)
+- Tem um mapa que dá pra saber onde estão as máquinas do azure
+- Dependendo da onde você quer alocar, o custo muda
+- A Microsoft tem regiões pelo mundo todo
+
+- O delay ocorre quanto você aloca dois servidores em regiões distantes que dependem entre si.
+
+- Diminuir a latência é uma responsabilidade da microsoft
+
+# Backbone
+- É uma rede exclusiva da Microsoft que estão interligadas entre si.
+
+# Disaster Recovery
+-> É ter uma réplica dos dados importantes em outra região, pra que quando o ambiente principal fique fora consigamos replicar ele em outro lugar
+
+
+# Zona de disponibilidade
+- É onde se tem uma série de pcs físicos que se comunicam no local
+- Ela separa de forma física os datacenters dentro da mesma região, fazendo com que se um cair, o outro permaneça respondendo. (eles são independentes entre si)
+
+  - Quanto mais disponibilidade mais caro
+Para que se faça uma boa computação em nuvem deve-se pensar e fazer muitas perguntas
+
+
+# PARES DE REGIÃO
+- Toda região possui uma região par, essa região par é onde os serviços de disaster recovery são direcionados
+- É ter sempre uma cópia do ambiente, para que se uma caia eu suba a outra
+- Essa replicação pode ser automática para alguns serviços
+- Deve-se ter no mínimo 300 milhas de separação entre os pares de regiões
+- Quando se atualiza as regiões, as regiões são atualizadas sequencialmente para evitar indisponibilidade
+
+# REGIÕES SOBERANAS DO AZURE
+- São regiões exclusivas, que não estão disponíveis para clientes normais.
+  
+Ex: Há uma região soberana de serviços governamentais dos EUA (região governamental dos Estados unidos), onde é utilizada para serviço militar, ele é uma região a parte
+
+Ex2: Há a Azure China, que é o primeiro provedor estrangeiro de serviços de nuvem pública da China, ela só fica disponível lá, é fisicamente separada e operada pela 21Vianet
+
+
+# GRUPO DE RECURSOS
+- É uma forma de se organizar as coisas (ex: grupo de recursos das máquinas, dos storages accounts, etc)
+- É possível colocar recursos de regiões diferentes dentro de um grupo
+- É possível aplicar regras para os grupos de recursos
+- Os aplicativos podem consumir vários serviços em grupos de recursos distintos
+
+# ASSINATURAS DO AZURE
+- Quando se cria uma conta, ela tem uma única assinatura, porém você pode comprar outras.
+  
+Ex: Assinatura: do desenvolvimento, da produção, do teste
+
+- UMA CONTA PODE TER DIVERSAS ASSINATURAS, MAS UMA ASSINATURA PERTENCE SOMENTE A UMA CONTA (N:1)
+- Para cada assinatura se terá uma fatura diferente
+- O dono da conta pode ter várias assinaturas, mas as assinaturas respondem para um único dono
+- Com assinaturas, podemos restringir e dar permissões
+
+# GRUPOS DE GERENCIAMENTO
+- Através de um grupo de gerenciamento, é possível trabalhar padrões para mais de uma assinatura 
+- Eles podem incluir várias assinaturas
+- As assinaturas herdam as condições aplicadas ao grupo de gerenciamento
+
 
