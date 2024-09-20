@@ -52,3 +52,15 @@ Ex3: Você pode configurar usando APIs, powerShell ou o portal.
 -	Quanto mais você replica o dado em vários lugares então menos tempo de indisponibilidade você vai ter.
 
 
+  # Tipos de serviço de nuvem
+  - IaaS (Maior gestão): São serviços onde os clientes possuem mais acesso, eles atualizam as máquinas, setam os firewalls, etc
+
+- PaaS (Gestão intermediária): Eu só me importo com a aplicação, e não com a máquina. 
+Ex: Só quero saber do BD, não de qual é o SO da máquina que ele tá hospedado
+
+- SaaS (Pouca gestão): A aplicação já existe, ela já tá pronta, eu já sei oq ele entrega e oq vai determinar oq eu vejo é a licença que eu adquiro. Os aplicativos SaaS também são chamados de softwares baseados na Web, softwares sob demanda ou softwares hospedados
+Ex: Microsoft Teams, Office 365, e-mail, calendários, etc.
+
+- Iaas -> PaaS -> SaaS (maior gestão -> menor gestão)
+
+
