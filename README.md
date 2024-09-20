@@ -126,4 +126,46 @@ Ex: Assinatura: do desenvolvimento, da produção, do teste
 - Eles podem incluir várias assinaturas
 - As assinaturas herdam as condições aplicadas ao grupo de gerenciamento
 
+# SERVIÇOS DO AZURE
+-	A certificação AZ-900 não exige que você saiba mexer nos apps, só exige que você saiba pra que eles servem
+
+##	Área de trabalho virtual do Azure
+- É uma virtualização da área de trabalho e aplicativos executada na nuvem
+Ex: Ao invés de enviar um notebook pra empresa, você pode ipagar para a pessoa utilizar o dela e instalar uma área de trabalho lá
+- Tem como criar um ambiente completo de virtualização da área de trabalho sem precisar executar outros servidores de gateway
+- Implantações reais de várias sessões
+
+##	Contêineres do Azure
+- Eles fornecem um ambiente leve e virtualizado que não exige o gerenciamento do SO e pode responder a alterações sob demanda
+- Ao invés de termos uma máquina que consome o servidor, criamos um container para reproduzir apenas uma rotina. Ele pode ser iniciado e interrompido a qualquer tempo
+
+##	Instâncias de contêineres do Azure:
+Ele possui instâncias, que é uma oferta da PaaS que executa um contêiner ou pod de contêineres no Azure
+
+##	Aplicativos  de contêineres do Azure: 
+É PaaS, que pode balancear a carga e escalar. (balanceamento de carga e escala = aplicativos)
+
+##	Serviço de Kubernetes o Azure: 
+É um serviço de orquestração para contêineres com arquiteturas distribuídas e grandes volumes de contêineres (gerencia o ciclo de vida deles)
+
+##	Azure functions: 
+PaaS, ela dá suporte a operações de computação sem servidor, o código dela é baseada em eventos, ou seja: ela não exige infraestrutura de servidor quando não está executando
+
+##	Serviços de aplicativos: 
+PaaS. É uma plataforma para criar, implantar e dimensionar Web e APIs rapidamente. Ele trabalha com .NET, .NET Core, Node.js, java. python ou php
+
+# SERVIÇOS DE REDE DO AZURE
+
+## Rede virtual do Azure (VNet): 
+Permite que os recursos do Azure se comuniquem uns com os outros, com a internet e com as redes locais
+
+## Sub-redes virtuais: 
+segmentam sua rede para atender às suas necessidades
+## Gateway de VPN:
+É usado para enviar tráfego criptografado entre uma rede virtual do Azure e uma no local pela internet pública.
+## ExpressRoute: 
+estende as redes locais para o Azure por meio de uma conexão privada facilitada por um provedor de conectividade – É CONECTAR UM CABO DE FIBRA ÓPTICA DA SUA REDE ATÉ O SERVIDOR, É + CARO, PORÉM MAIS PERFORMÁTICO
+## DNS do Azure: 
+confiabilidade e desempenho aproveitando uma rede global de servidores de nome DNA usando a rede Anycast
+
 
