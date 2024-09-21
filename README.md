@@ -1,4 +1,4 @@
-# resumo-do-lab
+![image](https://github.com/user-attachments/assets/3f23c185-d814-4979-83e3-09e60adaf51c)# resumo-do-lab
 Este repositório contém o resumo das lições aprendidas durante o desenvolvimento do lab na DIO
 
 # Introdução
@@ -167,5 +167,52 @@ segmentam sua rede para atender às suas necessidades
 estende as redes locais para o Azure por meio de uma conexão privada facilitada por um provedor de conectividade – É CONECTAR UM CABO DE FIBRA ÓPTICA DA SUA REDE ATÉ O SERVIDOR, É + CARO, PORÉM MAIS PERFORMÁTICO
 ## DNS do Azure: 
 confiabilidade e desempenho aproveitando uma rede global de servidores de nome DNA usando a rede Anycast
+
+
+# STORAGE ACCOUNTS -> CONTAS DE ARMAZENAMENTO
+- Elas devem ter um nome único globalmente
+- Servem para determinar os serviços de armazenamento e as opções de redundância
+- Quando se cria o storage account se precisa configurar a redundância. 
+
+Redundância = o quanto você quer que um sistema fique disponível
+![image](https://github.com/user-attachments/assets/79e839a4-578f-429d-bec2-5744d19866b7)
+![image](https://github.com/user-attachments/assets/e1cbee9b-d380-42b7-a1fc-6966cbe6db69)
+
+LRS - Síncrono	- Não é indicado para produção porque se o datacenter cair você perde os dados
+ZRS – Assíncrono
+
+
+# TIPOS DE DADOS DOS STORAGES ACCOUNTS
+
+- Blob: Onde se pode colocar de tudo, principalmente arquivos grandes
+- Disco do Azure: Adicionar discos para máquinas virtuais
+- Fila: Se pode armazenar e recuperar uma grande quantidade de mensagens
+- Arquivo: Compartilhamento de arquivos de rede altamente disponível, usando o protocolo de bloco de mensagens do servidor
+- Tabelas: Fornece uma opção de chave/atributos para dados estruturados e relacionais
+Eles são armazenados nos links:
+![image](https://github.com/user-attachments/assets/dae993e5-fbfd-4dd7-a93e-a6c61517847f)
+Link: nome do storage account + nome do tipo de arquivo + core.windows.net
+
+# CAMADAS DE ARMAZENAMENTO DE ACESSO DO AZURE
+- Quando você está criando um arquivo, ele vai te perguntar isso
+  ![image](https://github.com/user-attachments/assets/6fe7c6dd-bba5-40c4-84d0-d2174d368792)
+- Os arquivos mortos demoram mais tempo para serem recuperados, justamente porque a Microsoft “quebra” o arquivo e precisa juntar os pedaços para recuperar
+- No modelo frequente o valor cobrado pela consulta é mais barato do que em outros modelos.
+
+# MIGRAÇÃO DE DADOS AZURE
+- Azure Data Box: É um equipamento de migração física totalmente criptografado que vai te ajudar a migrar até 80TB de dados. Com ele você coloca seus dados lá e manda pro datacenter da Microsoft, no datacenter eles vão carregar seus dados pra nuvem e deixar esse data box como backup de recuperação para desastre.
+Cenário de uso: Um cliente bem longe do datacenter deseja migrar pra nuvem, mas possui tantos dados (acima de 40TB) que pela internet seria difícil levar.
+
+- AzCopy: É um utilitário de linha de comando que serve pra copiar blobs ou arquivos de ou para sua conta de armazenamento. Um ponto importante é que a sincronização é só em uma direção 
+
+- Gerenciador de armazenamento do Azure: Interface gráfica do usuário (de modo semelhante ao Windows Explorer), é compatível com Windows, MacOS e Linux
+
+- Sincronização de arquivos do Azure: É bidirecional, serve para sincronizar os arquivos do Azure e locais. A camada de  nuvem mantém os arquivos acessados com frequência no local, enquanto libera espaço
+
+OBS: Se deve conhecer o cliente e o produto para entender qual seria o melhor produto para se aplicar.
+
+
+
+
 
 
