@@ -211,6 +211,36 @@ Cenário de uso: Um cliente bem longe do datacenter deseja migrar pra nuvem, mas
 
 OBS: Se deve conhecer o cliente e o produto para entender qual seria o melhor produto para se aplicar.
 
+## SEGURANÇA
+- Conceito de confiança zero (**zero trust**): Não confie em ninguém
+- Cada camada precisa de segurança.
+
+- **Microsoft Entra ID**: Era o antigo active directory (ele trocou de nome). Ele serve para autenticação, SSO, gerenciamento de aplicativos, B2B (fazer login com conta do google) e gerenciamento de dispositivos. (Faz parte do thirdy part authorization)
+
+- **Microsoft Entra Domain Services:** Serve para fazer a sincronização do ambiente on premise para a nuvem.
+Se um usuário nasceu no on premise ele é replicado na nuvem
+Se um usuário nasce na nuvem ele não vai pro in premise (só a senha  vai de nuvem -> on premise, o esto é on premise -> nuvem)
+
+- **B2C do Microsoft Entra External ID:** É usar perfis de outros serviços (gmail, facebook, google +, etc) para se autenticar nos seus serviços/aplicativos
+
+- **Acesso condicional:** avalia a associação de usuário ou grupo, local do IP, Dispositivo de acesso, aplicativo, detecção de risco e etc para saber se a pessoa pode logar ou não.
+
+- **Controle de acesso baseado em função:** conceda somente o acesso que o usuário deve ter para realizar sua função (granularidade fina)
+
+- **Microsoft Defender para Nuvem:** é um serviço de monitoramento contra ameaças, ele consegue fazer comunicação e apontar problemas também no AWS e GCP. Ele tanto identifica como traz sugestões do que fazer. Acesso just in time (fornece proteção tanto nos datacenters do Azure como nos locais)
+- Os usuários excluídos da nuvem são deletados permanentemente após 30 dias.
+
+Autenticação -> identidade 
+
+Autorização -> acesso
+
+Autenticação multifator -> Segurança adicional, fornecendo 2 ou + elementos para autenticação
+ 
+
+# PROTEÇÃO COMPLETA
+![image](https://github.com/user-attachments/assets/61ef49f2-29bd-4777-8a3a-e049649f4a17)
+- A estratégia que implanta uma série de mecanismos para reduzir o avanço de um ataque é a Defesa em profundidade. Essa abordagem utiliza múltiplas camadas de segurança para proteger os dados e minimizar riscos.
+
 
 
 
