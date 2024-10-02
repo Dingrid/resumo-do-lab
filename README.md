@@ -241,7 +241,19 @@ Autenticação multifator -> Segurança adicional, fornecendo 2 ou + elementos p
 ![image](https://github.com/user-attachments/assets/61ef49f2-29bd-4777-8a3a-e049649f4a17)
 - A estratégia que implanta uma série de mecanismos para reduzir o avanço de um ataque é a Defesa em profundidade. Essa abordagem utiliza múltiplas camadas de segurança para proteger os dados e minimizar riscos.
 
+# Fatores que afetam os custos:
+1. Tipo de recurso (VM,Container, etc)
+2. Consumo (Pgto por consumo)
+3. Manutenção
+4. Área geográfica (dependendo do local o imposto vai influenciar no preço de onde você vai alocar os recursos)
+5. Tráfego de rede (levar os dados de uma região para outra pode acarretar uma zona de cobrança)
+6. Assinatura (tipo e configuração)
 
+**Azure Marketplace:** Onde você compra e provisione aplicações para os outros comprarem. Atualmente há mais de 10k de itens listados
+
+**Calculadora de custo total da propriedade (TCO):** É uma calculadora que traz uma ideia de recursos que você já tem indo para nuvem, quanto custaria.
+
+**As tags (marcas)** são extremamente úteis para reunir informações de cobrança. Elas são constituídas por um par nome : valor. ELAS NÃO SÃO HERDADAS
 
 
 
