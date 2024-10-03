@@ -189,6 +189,20 @@ ZRS – Assíncrono
 - Fila: Se pode armazenar e recuperar uma grande quantidade de mensagens
 - Arquivo: Compartilhamento de arquivos de rede altamente disponível, usando o protocolo de bloco de mensagens do servidor
 - Tabelas: Fornece uma opção de chave/atributos para dados estruturados e relacionais
+
+**Azure Policy** : Ajuda a impor padrões organizacionais e a avaliar a conformidade em escala. É UMA REGRA ACIMA DE QUALQUER PERMISSIONAMENTO
+
+**Bloqueio de recursos:** É feito quando se precisa manter o estado ou garantir a não exclusão de um recurso. Existe o bloqueio de:
+	- Excluir: QUe permite você ler e editar recursos
+	- ReadOnly: Que permite você ler, mas não excluir e atualizar algo. (Se você ligar uma máquina e colocar o bloqueio readOnly então vc n vai conseguir desligá-la mais)
+
+
+**Portal de Confiança do serviço:** É o local onde se tem várias informações sobre protocolos e serviços de segurança da Microsoft
+
+**Microsoft Purview:** É uma solução para governança, risco e conformidade dos dados. Ela te ajuda a obter uma exibição única dos seus dados, além de reunir insights sobre seus dados locais, multinuvem e de SaaS. Então aqui fazemos:
+	- Descoberta de dados automatizada
+	- Classificação de dados confidenciais
+	- Linhagem de dados de ponta a ponta
 Eles são armazenados nos links:
 ![image](https://github.com/user-attachments/assets/dae993e5-fbfd-4dd7-a93e-a6c61517847f)
 Link: nome do storage account + nome do tipo de arquivo + core.windows.net
@@ -249,6 +263,7 @@ Autenticação multifator -> Segurança adicional, fornecendo 2 ou + elementos p
 5. Tráfego de rede (levar os dados de uma região para outra pode acarretar uma zona de cobrança)
 6. Assinatura (tipo e configuração)
 
+# Serviços/Recursos
 **Azure Marketplace:** Onde você compra e provisione aplicações para os outros comprarem. Atualmente há mais de 10k de itens listados
 
 **Calculadora de custo total da propriedade (TCO):** É uma calculadora que traz uma ideia de recursos que você já tem indo para nuvem, quanto custaria.
