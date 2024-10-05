@@ -271,5 +271,14 @@ Autenticação multifator -> Segurança adicional, fornecendo 2 ou + elementos p
 **As tags (marcas)** são extremamente úteis para reunir informações de cobrança. Elas são constituídas por um par nome : valor. ELAS NÃO SÃO HERDADAS
 
 
+# Ferramentas para implementação de recursos
+**Azure Arc** : Está disponível independentemente da assinatura. Ele serve para que se faça o gerenciamento de recursos que não estão dentro do Azure (como o on premise, o AWS e o GCP (Google Cloud Platform)). Ele simplifica a governança e o gerenciamento ao fornecer uma plataforma de gerenciamento local consistente e de várias nuvens. 
+
+
+**Azure Resouce Manager (ARM):** É ele que recebe os comandos do usuário e gerencia todas as chamadas (ele que cria os recursos). Ele aceita modelos JSON
+
+**Azure bicep:** É uma linguagem nativa da Microsoft que é compatível apenas com a nuvem da microsoft
+
+
 
 
