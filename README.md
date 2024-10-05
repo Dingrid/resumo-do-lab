@@ -279,6 +279,12 @@ Autenticação multifator -> Segurança adicional, fornecendo 2 ou + elementos p
 
 **Azure bicep:** É uma linguagem nativa da Microsoft que é compatível apenas com a nuvem da microsoft
 
+# Serviços de Monitoramento Azure
+**Assistente do Azure:** É uma ferramenta cloud native que analisa os recursos implantados e faz recomendações com base nas boas práticas. Ele mede a confiabilidade, segurança, desempenho, custo e excelência operacional.
 
+**Integridade do Serviço do Azure:** Ele mantém você informado sobre o status geral do Azure que podem te afetar. (é como o salesforce trust)
+	- Resource Health: Fornece informações sobre a integridade de seus recursos de nuvem individuais.​
+
+**Azure Monitor:** É focado em maximização de disponibilidade e desempenho dos serviços e aplicativos. Ele toma decisões com base na telemetria da nuvem.
 
 
